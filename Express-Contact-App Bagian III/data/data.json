@@ -1,0 +1,22 @@
+[
+    {
+        "id": 88,
+        "nama": "Semarang",
+        "kecamatan": [
+            {
+                "id": 55,
+                "nama": "Tembalang",
+                "kelurahan": [
+                    {
+                        "id": 77,
+                        "nama": "rowosari"
+                    },
+                    {
+                        "id": 77,
+                        "nama": "meteseh"
+                    },
+                ]
+            },
+        ]
+    }
+]

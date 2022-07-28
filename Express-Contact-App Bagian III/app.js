@@ -7,6 +7,7 @@ const {
   findContact,
   addContact,
   cekDuplikat,
+  updateContacts,
 } = require("./utils/contacts");
 const { body, check, validationResult } = require("express-validator");
 const session = require("express-session");
@@ -172,11 +173,10 @@ app.post(
         contact: req.body,
       });
     } else {
-      res.send(req.body);
-      // addContact(req.body);
-      // // kirimkan flash message
-      // req.flash("msg", "Data Kontak Berhasil ditambahakan");
-      // res.redirect("/contact");
+      updateContacts(req.body);
+      // kirimkan flash message
+      req.flash("msg", "Data Kontak Berhasil diubah");
+      res.redirect("/contact");
     }
   }
 );
